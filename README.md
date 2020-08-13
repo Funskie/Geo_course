@@ -55,6 +55,11 @@
     >>>gdf = gpd.GeoDataFrame({'city':city}, geometry=location)
     >>>gdf.to_file('test.shp', driver = 'ESRI Shapefile')
     ```
+* 安裝相關套件
+
+    `anaconda search -t conda xgboost`
+    
+    `conda install -c anaconda py-xgboost`
 
 ### [Visual Studio Code (option)](https://code.visualstudio.com/)
 * Visual Studio Code，是一款Microsoft開發的輕量、跨平台的程式碼編輯器。雖然他不是IDE，但是搭配上各種社群 & 官方開發的Plugins，可以有很方便的開發體驗。
