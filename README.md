@@ -1,7 +1,11 @@
 # 環境安裝介紹
+## 下載課程檔案
+* 若有安裝`git`可以直接`clone`
+   
+   `git clone https://github.com/Funskie/Geo_course.git`
+* 沒有安裝`git`請直接下載zip檔並解壓縮
 
 ## 利用 `Anaconda` 安裝環境
-
 ### [Anaconda](https://www.anaconda.com/distribution/)
 * 點選上面連結下載符合OS的**PYTHON3**安裝檔並執行*PATH要打勾*
 * Anaconda指令介紹
@@ -38,23 +42,6 @@
 
 ### 安裝套件
 * 記得確認是否在虛擬環境內
-* 安裝geopandas套件
-    `conda install geopandas`
-    
-    `conda install descartes`
-    
-    `conda install mapclassify`
-    Anaconda會幫你解決所有版本衝突、編譯等問題
-
-* 測試套件，進入python互動式視窗逐行輸入
-    ```
-    >>>import geopandas as gpd
-    >>>from shapely.geometry import Point
-    >>>location = [Point((121.564101, 25.033493)), Point((-74.044303, 40.690645))]
-    >>>city = ['Taipei', 'New York']
-    >>>gdf = gpd.GeoDataFrame({'city':city}, geometry=location)
-    >>>gdf.to_file('test.shp', driver = 'ESRI Shapefile')
-    ```
 * 安裝相關套件
 
     `anaconda search -t conda xgboost`
